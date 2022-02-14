@@ -126,6 +126,10 @@ def catch_all(path):
     return make_response(jsonify(msg="Not Found"),404)
 
 
-if __name__ == "__main__":
-    db.create_all()
-    app.run(host="0.0.0.0",port=18080)
+def create_app(testing:bool=True):
+    global app
+    return app
+
+# if __name__ == "__main__":
+#     db.create_all()
+#     app.run(host="0.0.0.0",port=18080)
