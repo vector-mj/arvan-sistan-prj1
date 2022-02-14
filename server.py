@@ -21,7 +21,8 @@ app.url_map.strict_slashes = False
 db = SQLAlchemy(app)
 try:
     db.engine.execute("select 1")
-except:
+except Exception as e:
+    print(e)
     exitCode("DB Error")
 
 ###
@@ -127,4 +128,4 @@ def catch_all(path):
 
 if __name__ == "__main__":
     db.create_all()
-    app.run(debug=True)
+    app.run(host="0.0.0.0")
