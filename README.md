@@ -2,7 +2,7 @@
 
 # Flask 🌶 | Restful API
 
-![](./1.png)
+![alt](./1.PNG)
 
 </center>
 
