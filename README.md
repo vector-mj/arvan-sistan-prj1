@@ -1,4 +1,3 @@
-<blockquote>
 <center>
 
 # Flask 🌶 | Restful API
@@ -192,5 +191,4 @@ WantedBy=multi-user.target
 </center>
 
 <br>
-</blockquote>
 <br>
